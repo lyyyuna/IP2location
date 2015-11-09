@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="contentPanel" Margin="8,32,0,0">
+            <TextBlock Text="Hello, world!" Margin="0,0,0,40"/>
+            <TextBlock Text="输入需要查询的 IPv4 地址" FontSize="24"/>
+            <StackPanel x:Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
+                <TextBox x:Name="nameInput" Width="280" HorizontalAlignment="Left"/>
+                <Button x:Name="inputButton" Content="查询" Click="Button_Click1"/>
+            </StackPanel>
+            <TextBlock x:Name="greetingOutput" Height="50"/>
+            <WebView x:Name="ShowBaiduImage" Height="432" Margin="0,0,25,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
